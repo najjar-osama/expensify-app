@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/bin/node /usr/bin/yarn test watch
+  /usr/bin/node /usr/bin/yarn run start
 
 PATH: 
   /home/osama/bin:/home/osama/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  SyntaxError: /home/osama/workspace/react-course-projects/expensify-app/package.json: Unexpected token / in JSON at position 373
+  SyntaxError: /home/osama/workspace/react-course-projects/expensify-app/package.json: Unexpected string in JSON at position 421
       at JSON.parse (<anonymous>)
       at /usr/lib/node_modules/yarn/lib/cli.js:1130:59
       at Generator.next (<anonymous>)
@@ -35,9 +35,8 @@ npm manifest:
       "build:dev": "webpack",
       "build:prod": "webpack -p --env production",
       "dev-server": "webpack-dev-server",
-      "test": "jest --config=jest.config.json",
-      //"test:watch": "jest --watch --config=jest.config.json",
-      "start": "node server/server.js",
+      "test": "jest --watch --config=jest.config.json",
+      "start" : "node ./server/server.js"
       "heroku-postbuild": "yarn run build:prod"
     },
     "dependencies": {
