@@ -5,6 +5,7 @@ exports[`Should render ExpenseDashboardPage correctly 1`] = `
   <h1>
     Expensify!
   </h1>
+  <Connect(ExpensesSummary) />
   <Connect(ExpenseListFilters) />
   <Connect(ExpenseList) />
 </header>
