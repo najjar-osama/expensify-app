@@ -3,12 +3,7 @@ const path = require("path");
 const firebase = require("firebase");
 
 const config = {
-  apiKey: "AIzaSyD8pAVsZ8d3urxioKGqohiZu3d9uzrMN3Y",
-  authDomain: "expenseit-app.firebaseapp.com",
-  databaseURL: "https://expenseit-app.firebaseio.com",
-  projectId: "expenseit-app",
-  storageBucket: "expenseit-app.appspot.com",
-  messagingSenderId: "439957583230"
+  // fire base config
 };
 firebase.initializeApp(config);
 
