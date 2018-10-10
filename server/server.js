@@ -3,7 +3,7 @@ const path = require("path");
 const firebase = require("firebase");
 
 const config = {
-  // fire base config
+  // firebase config
 };
 firebase.initializeApp(config);
 
